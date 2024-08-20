@@ -1,0 +1,64 @@
+.addreess {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  @include tablet {
+    justify-content: space-between;
+  }
+  @include desctop {
+    flex-wrap: nowrap;
+    gap: 94px;
+  }
+}
+.footer {
+  background: #2f303a;
+  padding: 60px 0;
+  @include tablet {
+    padding: 60px 80px;
+  }
+}
+.footer-title {
+  font-style: normal;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 28px;
+  display: block;
+  text-align: center;
+  @include desctop {
+    font-size: 26px;
+    text-align: start;
+  }
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.42px;
+  font-style: normal;
+  text-align: center;
+  @include desctop {
+    text-align: start;
+  }
+}
+.footer-list {
+  width: 231px;
+}
+.footer-item {
+  text-align: center;
+  @include desctop {
+    text-align: left;
+  }
+}
+.address-link-white {
+  color: white;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 12px;
+}
