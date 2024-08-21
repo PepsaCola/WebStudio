@@ -32,4 +32,8 @@
   flex-wrap: wrap;
   gap: 8px;
   padding-right: 129px;
+  @include tablet {
+    justify-content: center;
+    padding-right: 0;
+  }
 }
